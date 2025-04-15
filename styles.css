@@ -1,0 +1,72 @@
+/* Custom styles to complement the Bootstrap theme */
+
+body {
+    background-color: var(--bs-dark);
+    color: var(--bs-light);
+}
+
+/* Message styles */
+.message {
+    margin-bottom: 1rem;
+    max-width: 80%;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+}
+
+.user-message {
+    background-color: var(--bs-primary);
+    color: white;
+    margin-left: auto;
+    border-top-right-radius: 0;
+}
+
+.bot-message {
+    background-color: var(--bs-secondary);
+    color: white;
+    margin-right: auto;
+    border-top-left-radius: 0;
+}
+
+.system-message {
+    background-color: var(--bs-dark);
+    border: 1px solid var(--bs-secondary);
+    color: var(--bs-light);
+    width: 100%;
+    max-width: 100%;
+}
+
+.message-content {
+    word-break: break-word;
+}
+
+/* Make code snippets stand out */
+code {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 0.2em 0.4em;
+    border-radius: 0.2em;
+    font-size: 0.9em;
+}
+
+/* Custom scrollbar for the chat container */
+#chat-container::-webkit-scrollbar {
+    width: 6px;
+}
+
+#chat-container::-webkit-scrollbar-track {
+    background: var(--bs-dark);
+}
+
+#chat-container::-webkit-scrollbar-thumb {
+    background-color: var(--bs-secondary);
+    border-radius: 3px;
+}
+
+/* Animation for new messages */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.message {
+    animation: fadeIn 0.3s ease-out;
+}

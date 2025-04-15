@@ -1,0 +1,27 @@
+# Виртуальное окружение
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Конфиденциальные данные
+.env
+*.json
+!example.env
+
+# Базы данных
+*.db
+*.sqlite3
+
+# Логи
+*.log
+
+# Временные файлы
+*.swp
+*~
+.DS_Store
+
+# Системные директории
+.idea/
+.vscode/ 
